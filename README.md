@@ -65,14 +65,14 @@ Setup a root cronjob named "ocsinventory-agent" scheduled at 6AM everyday that l
          - { 
              role: ocsinventory-agent, 
              ocsinventory_launch_options: "--server=http://myocsserver.domain.com/ocsinventory",
-             ocsinventory_launch_after_install: true
-             ocsinventory_setup_cronjob: true
-             ocsinventory_cronjob_name: "ocsinventory-agent"
-             ocsinventory_cronjob_user: "root"
-             ocsinventory_cronjob_month: "*"
-             ocsinventory_cronjob_weekday: "*"
-             ocsinventory_cronjob_day: "*"
-             ocsinventory_cronjob_hour: "6"
+             ocsinventory_launch_after_install: true,
+             ocsinventory_setup_cronjob: true,
+             ocsinventory_cronjob_name: "ocsinventory-agent",
+             ocsinventory_cronjob_user: "root",
+             ocsinventory_cronjob_month: "*",
+             ocsinventory_cronjob_weekday: "*",
+             ocsinventory_cronjob_day: "*",
+             ocsinventory_cronjob_hour: "6",
              ocsinventory_cronjob_minute: "0"
            }
 
